@@ -19,13 +19,11 @@
 
             {{- with $sidebar_left }}
               {{- $partialPath := printf "sidebar/%s.html" . }}
-              {{- if partialExists $partialPath }}
-                <div class="col-{{ cond (eq $sidebar_count 1) 4 3 }} col-12-narrower">
-                  <div id="sidebar">
-                    {{- partial $partialPath $ }}
-                  </div>
+              <div class="col-{{ cond (eq $sidebar_count 1) 4 3 }} col-12-narrower">
+                <div id="sidebar">
+                  {{- partial $partialPath $ }}
                 </div>
-              {{- end }}
+              </div>
             {{- end }}
 
             <div class="{{ if gt $sidebar_count 0 -}}
@@ -40,13 +38,11 @@
 
             {{- with $sidebar_right }}
               {{- $partialPath := printf "sidebar/%s.html" . }}
-              {{- if partialExists $partialPath }}
-                <div class="col-{{ cond (eq $sidebar_count 1) 4 3 }} col-12-narrower">
-                  <div id="sidebar">
-                    {{- partial $partialPath $ }}
-                  </div>
+              <div class="col-{{ cond (eq $sidebar_count 1) 4 3 }} col-12-narrower">
+                <div id="sidebar">
+                  {{- partial $partialPath $ }}
                 </div>
-              {{- end }}
+              </div>
             {{- end }}
 
           {{ if gt $sidebar_count 0 }}</div>{{ end }}
@@ -59,3 +55,4 @@
     {{- partial "scripts.html" . -}}
   </body>
 </html>
+
