@@ -3,5 +3,5 @@
   command = "hugo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.121.1"  # oder deine gewünschte Hugo-Version
-  GO_VERSION = "1.20"  # oder 1.21 – je nach Kompatibilität
+  HUGO_VERSION = "0.147.0" 
+  GO_VERSION = "1.21.5"
