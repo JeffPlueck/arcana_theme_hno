@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "/Users/jeff/arbeit/hnowucherpfennig/arcana-theme",
+	"sourceRoot": "/Users/jeff/workspaces/hnowucherpfennig/arcana-theme",
 	"sources": [
 		"assets/sass/main.scss",
 		"assets/sass/libs/_vars.scss",
